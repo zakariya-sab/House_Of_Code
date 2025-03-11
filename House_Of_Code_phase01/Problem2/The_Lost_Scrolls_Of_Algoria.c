@@ -14,24 +14,17 @@ int My_strlen(const char *str)
 
 void reverse_string(char *str)
 {
-    int LenthgOfString = My_strlen(str);
-    char *Ptr_str;
-    Ptr_str = str + (LenthgOfString - 1); // pointe sur la dernier element
-    char *Tmp_str = malloc(LenthgOfString * 1);
-    for (int i = 0; i < LenthgOfString; i++)
+    int PosOfEnd = My_strlen(str) - 1;
+    int PosOfStart = 0;
+    char tmp;
+    while (PosOfStart < PosOfEnd)
     {
-        Tmp_str[i] = *Ptr_str;
-        Ptr_str--;
+        tmp = str[PosOfStart];
+        str[PosOfStart] = str[PosOfEnd];
+        str[PosOfEnd] = tmp;
+        PosOfEnd--;
+        PosOfStart++;
     }
-    for (int i = 0; i < LenthgOfString; i++)
-    {
-        *str = Tmp_str[i];
-        str++;
-    }
-    // free
-    free(Tmp_str);
-    Tmp_str = NULL;
-    Ptr_str = NULL;
 }
 
 int main()

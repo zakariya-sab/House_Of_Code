@@ -27,4 +27,4 @@ This repository contains my solutions for the **House of Code** competition - **
 ## How to Run the Code
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/House-Of-Code-Solutions.git
+   git clone https://github.com/zakariya-sab/House-Of-Code-Solutions.git

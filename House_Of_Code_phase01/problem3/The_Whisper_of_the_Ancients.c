@@ -34,9 +34,19 @@ void reverse_string(char *str)
     Ptr_str = NULL;
 }
 
+
+
 void Reverse_Words(char str[])
 {
-
+    int LenthgOfString = My_strlen(str);
+    reverse_string(str);
+    for (int i = 0; i < LenthgOfString; i++)
+    {
+        if (*(str + i) == ' ')
+        {
+      
+        }
+    }
 }
 int main(void)
 {

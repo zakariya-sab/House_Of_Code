@@ -21,7 +21,7 @@ This repository contains my solutions for the **House of Code** competition - **
 
 ### 4. **Problem 4: Guardian of the Ancient Scrolls (Valid Parentheses Check)**
 - **Description**: Write a function to check if the brackets in a string are balanced and properly nested.
-- **Code**: [solution.c](./House_Of_Code_phase01/Problem4/solution.c)
+- **Code**: [solution.c](./House_Of_Code_phase01/Problem4/Guardian_of_the_Ancient_Scrolls.c)
 - **Executable**: [a.exe](./House_Of_Code_phase01/Problem4/a.exe)
 
 ## How to Run the Code

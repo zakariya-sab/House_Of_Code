@@ -16,12 +16,12 @@ This repository contains my solutions for the **House of Code** competition - **
 
 ### 3. **Problem 3: The Whisper of the Ancients (Reverse Words in a String)**
 - **Description**: Implement a function to reverse the order of words in a given string.
-- **Code**: [solution.c](./House_Of_Code_phase01/Problem3/The_Whisper_of_the_Ancients.c)
-- **Executable**: [a.exe](./House_Of_Code_phase01/Problem3/a.exe)
+- **Code**: [solution.c](./House_Of_Code_phase01/problem3/The_Whisper_of_the_Ancients.c)
+- **Executable**: [a.exe](./House_Of_Code_phase01/problem3/a.exe)
 
 ### 4. **Problem 4: Guardian of the Ancient Scrolls (Valid Parentheses Check)**
 - **Description**: Write a function to check if the brackets in a string are balanced and properly nested.
-- **Code**: [solution.c](./House_Of_Code_phase01/Problem4/solution.c)
+- **Code**: [solution.c](./House_Of_Code_phase01/Problem4/Guardian_of_the_Ancient_Scrolls.c)
 - **Executable**: [a.exe](./House_Of_Code_phase01/Problem4/a.exe)
 
 ## How to Run the Code

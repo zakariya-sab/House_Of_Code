@@ -21,25 +21,29 @@ bool isValid(const char *str)
         return false;
     }
     char *stack = (char *)malloc(sizeof(char) * size);
-    int cp = 1;
+    int CurrentPosition = 1;
     stack[0] = str[0]; // pour la premier fois
     int i = 1;
-    while (cp != size)
+    while (CurrentPosition != size)
     {
-        stack[i] = str[cp];
+        stack[i] = str[CurrentPosition];
         if (i == 0)
         {
-            cp++;
+            CurrentPosition++;
             i++;
         }
         else if ((stack[i] == '}' && stack[i - 1] == '{') || (stack[i] == ']' && stack[i - 1] == '[') || (stack[i] == ')' && stack[i - 1] == '('))
         {
             i--;
-            cp++;
+            CurrentPosition++;
+        }
+        else if ((stack[i] != '}' && stack[i] != '{') && (stack[i] != ']' && stack[i] != '[') && (stack[i] != ')' && stack[i] != '('))
+        {
+            CurrentPosition++;
         }
         else
         {
-            cp++;
+            CurrentPosition++;
             i++;
         }
     }

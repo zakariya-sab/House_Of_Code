@@ -34,53 +34,9 @@ void reverse_string(char *str)
     Ptr_str = NULL;
 }
 
-void put_str1_in_str2(char *str1, char *str2, int BeginingOfString, int lengthOfSTr)
-{
-
-    if (BeginingOfString != 0)
-    {
-        *(str2 + BeginingOfString - 1) = ' ';
-    }
-    int count = BeginingOfString;
-    while (BeginingOfString != lengthOfSTr)
-    {
-        *(str2 + BeginingOfString) = *str1;
-        str1++;
-        str2++;
-        BeginingOfString++;
-    }
-}
-
 void Reverse_Words(char str[])
 {
-    int LengthOfStr = My_strlen(str);
-    char *Sub_Str = NULL;
-    char *Tmp_Str = NULL;
-    // Variable Sub_Str contine the word in string
-    Sub_Str = (char *)malloc(LengthOfStr);
-    // variable Tmp_str contine the reverse word
-    Tmp_Str = (char *)malloc(LengthOfStr);
 
-    int BeginingOfString = LengthOfStr;
-    for (int i = 0; i < LengthOfStr; i++)
-    {
-        if (str[i] == ' ' || i == LengthOfStr - 1)
-        {
-            put_str1_in_str2(Sub_Str, Tmp_Str, BeginingOfString, LengthOfStr); //
-            Sub_Str = '\0';
-        }
-        else
-        {
-            BeginingOfString--;
-            *(Sub_Str + i) = str[i];
-        }
-    }
-
-    // free
-    free(Sub_Str);
-    free(Tmp_Str);
-    Sub_Str = NULL;
-    Tmp_Str = NULL;
 }
 int main(void)
 {

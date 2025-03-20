@@ -24,6 +24,12 @@ This repository contains my solutions for the **House of Code** competition - **
 - **Code**: [solution.c](./House_Of_Code_phase01/Problem4/Guardian_of_the_Ancient_Scrolls.c)
 - **Executable**: [a.exe](./House_Of_Code_phase01/Problem4/a.exe)
 
+### 5. **Problem 5: Problem5 (Advanced - Optional): String Splitter (No Built-in Tokenization Functions)**
+- **Description**: Write a function that takes a string and a delimiter character, and splits the string
+into multiple substrings without using the strtok() function.
+- **Code**: [solution.c](./House_Of_Code_phase01/Problem5/String_Splitter.c)
+- **Executable**: [a.exe](./House_Of_Code_phase01/Problem5/a.exe)
+
 ## How to Run the Code
 1. Clone the repository to your local machine:
    ```bash

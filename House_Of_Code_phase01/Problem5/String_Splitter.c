@@ -28,9 +28,9 @@ int NumberOfWordInString(const char *str, char delimiter)
     return count;
 }
 
-void AddSubStringInVector(char *vector, const char *str, int PosOfStart, int PosOfEnd)
+void AddSubStringInVector(char *vector, char *str, int PosOfStart, int PosOfEnd)
 {
-    int LengthOfSubString = PosOfEnd - PosOfStart;
+    int LengthOfSubString = PosOfEnd - PosOfStart +1 ;
     int i = 0;
     for (i = 0; i <= LengthOfSubString; i++)
     {
@@ -43,20 +43,20 @@ void AddSubStringInVector(char *vector, const char *str, int PosOfStart, int Pos
     vector[i] = '\0';
 }
 
-char **split_str(const char *str, char delimiter)
+char **split_str( char *str, char delimiter)
 {
     int LengthOfString = My_strlen(str);
     int NumberOfWordInStr = NumberOfWordInString(str, delimiter);
     char **vector = NULL;
-    vector = (char **)malloc(sizeof(char *) * (NumberOfWordInStr + 1));
+    vector = malloc(sizeof(char *) * (NumberOfWordInStr + 1));
     if (vector == NULL)
     {
         perror("\n\nErreur d'allocation mémoire\n\n");
         return NULL;
     }
-    for (int i = 0; i < NumberOfWordInStr + 1; i++)
+    for (int i = 0; i <= NumberOfWordInStr; i++)
     {
-        vector[i] = "NULL";
+        vector[i] = NULL;
     }
     int Pos_Of_Start_In_SubString = 0;
     int Pos_Of_End_In_SubString = 0;

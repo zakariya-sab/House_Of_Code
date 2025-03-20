@@ -46,6 +46,8 @@ bool isValid(const char *str)
             CurrentPosition++;
             i++;
         }
+        free(stack);
+        stack = NULL;
     }
 
     if (i == 0)
